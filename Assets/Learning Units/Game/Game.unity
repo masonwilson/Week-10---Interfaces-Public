@@ -373,7 +373,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 236850587}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2097522438}
+        m_TargetAssemblyTypeName: MoveRight, Assembly-CSharp
+        m_MethodName: MoveObjectRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &236850587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -528,7 +540,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 576385744}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2097522439}
+        m_TargetAssemblyTypeName: MoveDown, Assembly-CSharp
+        m_MethodName: MoveObjectDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &576385744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -594,8 +618,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 790402267}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22, y: 2, z: 26}
-  m_LocalScale: {x: 1, y: 2.7970312, z: 2.9795365}
+  m_LocalPosition: {x: 22.232, y: 2, z: 26}
+  m_LocalScale: {x: 2.3375, y: 2.7970312, z: 2.9795365}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1086831700}
@@ -1299,8 +1323,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2097522436}
-        m_TargetAssemblyTypeName: CreateObject, Assembly-CSharp
-        m_MethodName: CreateNewObject
+        m_TargetAssemblyTypeName: MoveLeft, Assembly-CSharp
+        m_MethodName: MoveObjectLeft
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1566,7 +1590,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1660227122}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2097522437}
+        m_TargetAssemblyTypeName: MoveUp, Assembly-CSharp
+        m_MethodName: MoveObjectUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1660227122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1845,6 +1881,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2097522435}
   - component: {fileID: 2097522436}
+  - component: {fileID: 2097522439}
+  - component: {fileID: 2097522438}
+  - component: {fileID: 2097522437}
   m_Layer: 0
   m_Name: '@ObjectManager'
   m_TagString: Untagged
@@ -1876,8 +1915,46 @@ MonoBehaviour:
   m_GameObject: {fileID: 2097522434}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4401843734f4db949984454da75e0201, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ba670d9d6a0ac34895c004a0d8f2de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrefabToCreate: {fileID: 7718993894057591670, guid: db1c000278caa8548a28a05bb3260ba7, type: 3}
-  locationToCreateObject: {fileID: 0}
+  cube: {fileID: 790402267}
+--- !u!114 &2097522437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097522434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e1dd617226e6f14a956414e9f0a862d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cube: {fileID: 790402267}
+--- !u!114 &2097522438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097522434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a510d86f7381dc4dab547c1fad9205d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cube: {fileID: 790402267}
+--- !u!114 &2097522439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097522434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f05f81612d70354cbb28f29c1606ab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cube: {fileID: 790402267}
